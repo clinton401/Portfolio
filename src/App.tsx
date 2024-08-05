@@ -96,7 +96,7 @@ function App() {
     {
       name: "Spacetour",
       imgUrl: spacetourImg,
-      description: "A smiple personal projec.t",
+      description: "A smiple personal project.",
       technologies: ["React", "JavaScript"],
       filters: "React",
       liveUrl: "https://spaceetour.netlify.app",
