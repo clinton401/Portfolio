@@ -49,7 +49,7 @@ function Navbar() {
 
       <nav className="relative  w-s-img aspect-square ">
         <button
-          className={` *:transition-transform *:duration-300 absolute right-0 z-[1000] *:ease-in *:h-[2px] w-s-img *:rounded-full flex items-end flex-col gap-[6px] ham-btn ${
+          className={` *:transition-transform *:duration-300 absolute right-0 z-[800] *:ease-in *:h-[2px] w-s-img *:rounded-full flex items-end flex-col gap-[6px] ham-btn ${
             isOpen ? "active *:bg-black" : "*:bg-white"
           }`}
           onClick={toggleMenu}

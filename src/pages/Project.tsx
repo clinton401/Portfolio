@@ -85,7 +85,7 @@ const [filteredProjects, setFilteredProjects] = useState<ProjectType[]>([]);
             return <ProjectCard key={project.name} project={project} />;
           })}
       </section>
-      <section className="flex items-center justify-center pt-6 gap-4 md:gap-8 px-sided w-full  flex-wrap ">
+      <section className="flex items-center justify-center pt-6 gap-4 md:gap-8 px-sides w-full  flex-wrap ">
         <button
           className="Btn text-sm font-normal"
           onClick={() => contents?.navigation("/contact")}

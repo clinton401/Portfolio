@@ -171,7 +171,7 @@ console.log(error.message)
               </p>
             )}
           </div>
-          <div className="flex items-center justify-center pt-4 gap-4 md:gap-8 px-sided w-full  flex-wrap ">
+          <div className="flex items-center justify-center pt-4 gap-4 md:gap-8 px-sides w-full  flex-wrap ">
             <motion.button
               initial="hidden"
               whileInView="visible"
