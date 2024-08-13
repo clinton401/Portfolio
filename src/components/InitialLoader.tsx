@@ -1,7 +1,7 @@
 import {FC, useEffect} from 'react'
 // import logo from "../assets/software-developer.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { scrollToTop } from '../lib/utils';
 const InitialLoader: FC = () => {
     useEffect(() => {
