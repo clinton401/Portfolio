@@ -44,9 +44,9 @@ const Contact: FC = () => {
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
-    const templateId = "template_iww4crr";
-    const serviceId = "service_3f6fpv9";
-    const publicKey = "u8WdHH-h6tjgYvO3x";
+    const templateId = import.meta.env.VITE_REACT_TEMPLATE_ID;
+    const serviceId = import.meta.env.VITE_REACT_SERVICE_ID;
+    const publicKey = import.meta.env.VITE_REACT_PUBLIC_KEY;
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -171,7 +171,7 @@ console.log(error.message)
               </p>
             )}
           </div>
-          <div className="flex items-center justify-center pt-4 gap-4 md:gap-8 px-sides w-full  flex-wrap ">
+          <div className="flex items-center justify-center pt-4 gap-4 md:gap-8 w-full  flex-wrap ">
             <motion.button
               initial="hidden"
               whileInView="visible"
