@@ -86,17 +86,17 @@ const Contact: FC = () => {
             }
         } catch (err ) {
             const error = err as AxiosError;
-toast.error("Failed to send message", {
-  position: "top-center",
-  autoClose: 5000,
-  hideProgressBar: false,
-  closeOnClick: true,
-  pauseOnHover: true,
-  draggable: true,
-  progress: undefined,
-  theme: "light",
-  transition: Bounce,
-});
+              toast.error("Failed to send message", {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+              });
 console.log(error.message)
         } finally {
             setIsLoading(false)
@@ -171,7 +171,7 @@ console.log(error.message)
               </p>
             )}
           </div>
-          <div className="flex items-center justify-center pt-4 gap-4 md:gap-8 w-full  flex-wrap ">
+          <div className="flex items-center justify-center pt-4 gap-4 md:gap-8020003 w-full  flex-wrap ">
             <motion.button
               initial="hidden"
               whileInView="visible"

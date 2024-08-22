@@ -69,10 +69,10 @@ function App() {
       imgUrl: cinematicoImg,
       description:
         "A movie search platform where you can find and watch trailers, explore detailed information about films, and stay updated with the latest trending movies and TV shows.",
-      technologies: ["React", "JavaScript", "TailwindCSS", "Axios", "SwiperJS"],
+      technologies: ["React", "JavaScript", "TailwindCSS", "MongoDB", "ExpressJS",  "SwiperJS"],
       filters: "React",
-      liveUrl: "https://cinematico.netlify.app",
-      githubUrl: "https://github.com/clinton401/Cinematico",
+      liveUrl: "https://cinematico.up.railway.app",
+      githubUrl: "https://github.com/clinton401/cinematico-fullstack",
     },
     {
       name: "Worldsearch",
