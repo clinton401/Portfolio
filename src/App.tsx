@@ -19,6 +19,7 @@ import spacetourImg from "./assets/spacetour.png";
 import cannanImg from "./assets/cannann.png";
 import foodplugImg from "./assets/foodplug.png";
 import gestureImg from "./assets/gesture.png";
+import linktideImg from "./assets/linktide.png";
 import ContextComp from './ContextComp';
 import { useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -38,6 +39,23 @@ function App() {
     gitImg,
   ];
   const projects = [
+    {
+      name: "Linktide",
+      imgUrl: linktideImg,
+      description:
+        "Linktide is a social media management platform that lets you track analytics and post to all your accounts from one place. Simplify your social media strategy and stay in control with ease.",
+      technologies: [
+        "NextJS",
+        "TypeScript",
+        "Next-Auth",
+        "MongoDB",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      filters: "React",
+      liveUrl: "https://www.linktide.org",
+      githubUrl: "https://github.com/clinton401/linktide",
+    },
     {
       name: "Glamora",
       imgUrl: glamoraImg,
