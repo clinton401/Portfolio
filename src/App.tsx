@@ -53,7 +53,7 @@ function App() {
         "Shadcn UI",
       ],
       filters: "React",
-      liveUrl: "https://www.linktide.org",
+      liveUrl: "https://linktide.vercel.app",
       githubUrl: "https://github.com/clinton401/linktide",
     },
     {
