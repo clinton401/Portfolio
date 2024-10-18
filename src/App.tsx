@@ -127,8 +127,8 @@ function App() {
         "A charming wedding website showcasing event details, venue information, and a gallery of the couple's pictures.",
       technologies: ["HTMl", "CSS", "JavaScript", "SwiperJS"],
       filters: "HTML & CSS",
-      liveUrl: "https://spaceetour.netlify.app",
-      githubUrl: "https://github.com/clinton401/spacetour",
+      liveUrl: "https://cannan.netlify.app",
+      githubUrl: "https://github.com/clinton401/josha",
     },
     {
       name: "Foodplug",
@@ -136,8 +136,8 @@ function App() {
       description: "A food eCommerce website.",
       technologies: ["HTMl", "CSS", "JavaScript"],
       filters: "HTML & CSS",
-      liveUrl: "https://cannan.netlify.app",
-      githubUrl: "https://github.com/clinton401/josha",
+      liveUrl: "https://foodplug1.netlify.app",
+      githubUrl: "https://github.com/clinton401/food-plug-prog",
     },
     {
       name: "GestureClash",
