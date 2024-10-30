@@ -32,7 +32,7 @@ const navLinks = {
     opacity: 1,
     transition: {
       duration: 0.3,
-      //   ease: "easeIn",
+      ease: "easeIn",
       type: "spring",
       damping: 10,
       stiffness: 100,
@@ -84,25 +84,25 @@ const scaleAnimation = {
     scale: 1,
     transition: {
       duration: 0.3,
-    //   type: "spring",
-    //   damping: 10,
-    //     stiffness: 100,
-    //   times: [0, 0.3, 0.7 , 1],
-        // repeatDelay: 1
+      //   type: "spring",
+      //   damping: 10,
+      //     stiffness: 100,
+      //   times: [0, 0.3, 0.7 , 1],
+      // repeatDelay: 1
     },
   },
 };
 const scaleAnimation2 = {
   hidden: {
     // opacity: 0,
-    filter: 'blur(20px)',
+    filter: "blur(20px)",
     // rotate: 0,
-   scale: 0
+    scale: 0,
   },
   visible: {
     scale: 1,
     // opacity: 1,
-    filter: 'blur(0px)',
+    filter: "blur(0px)",
     // rotate: "360deg",
     transition: {
       duration: 0.3,
@@ -113,35 +113,31 @@ const scaleAnimation2 = {
   },
 };
 const gradientSpan = {
-    hidden: {
-        x: 0,
-        // opacity: 0.4
+  hidden: {
+    x: 0,
+    // opacity: 0.4
+  },
+  visible: {
+    x: "150%",
+    // opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeIn",
     },
-    visible: {
-        x: "150%",
-        // opacity: 1,
-        transition: {
-            duration: 0.3,
-            ease: 'easeIn'
-        }
-    }
-}
+  },
+};
 const gradientH3 = {
-    hidden: {
-        opacity: 0,
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeIn",
     },
-    visible: {
-        opacity: 1,
-        transition: {
-            
-            duration: 0.3,
-            ease: "easeIn"
-        }
-    }
-}
-
-
-
+  },
+};
 
 const parentCompAnimation = {
   hidden: {
@@ -155,48 +151,73 @@ const parentCompAnimation = {
       when: "beforeChildren",
     },
   },
-//   exit: {
-//     opacity: 0,
-//     transition: {
-//       ease: "easeIn",
-//       duration: 0.3,
-      
-//     },
-//   },
+  //   exit: {
+  //     opacity: 0,
+  //     transition: {
+  //       ease: "easeIn",
+  //       duration: 0.3,
+
+  //     },
+  //   },
 };
 
 const rightAnimation = {
-    hidden: {
-        x: "100vw",
-        opacity: 0
-    }, visible: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            ease: "easeIn",
-            type: "spring",
-            mass: 0.4,
-            damping: 8
-        }
-    }
-}
+  hidden: {
+    x: "100vw",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeIn",
+      type: "spring",
+      mass: 0.4,
+      damping: 8,
+    },
+  },
+};
 const leftAnimation = {
-    hidden: {
-        x: "-100vw",
-        opacity: 0
-    }, visible: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            ease: "easeIn",
-            type: "spring",
-            mass: 0.4,
-            damping: 8
-        }
-    }
-}
+  hidden: {
+    x: "-100vw",
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeIn",
+      type: "spring",
+      mass: 0.4,
+      damping: 8,
+    },
+  },
+};
 
-
+const headerAnimation = {
+  hidden: {
+    y: -100,
+    // opacity: 0,
+  },
+  visible: {
+    y: 0,
+    // opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeIn",
+      
+    },
+  },
+  exit: {
+    y: -100,
+    // opacity: 0,
+    transition: {
+      duration: 0.3,
+      ease: "easeIn",
+      
+    },
+  },
+};
 export {
   hamMenu,
   appearAnimation,
@@ -209,4 +230,5 @@ export {
   parentCompAnimation,
   rightAnimation,
   leftAnimation,
+  headerAnimation
 };

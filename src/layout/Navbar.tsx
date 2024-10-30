@@ -11,6 +11,7 @@ import {
   appearAnimation,
   hAppear,
   navLinks,
+  
 } from "../lib/framer-motion-utils";
 import { MyContext } from "../ContextComp";
 
@@ -42,12 +43,12 @@ function Navbar() {
  }, [isOpen]);
 
   return (
-    <header className={`flex items-center duration-300 ease-in transition-all ${contents?.scrollDirection === "up" ? "top-0" : "-top-40"} justify-between fixed z-[200]  left-0 w-full gap-4  bg-black  text-white px-sides py-3`}>
+    <header className={`flex items-center duration-300 ease-in transition-all  ${contents?.scrollDirection === "up" ? "top-0" : "-top-40"} justify-between fixed z-[200]  left-0 w-full gap-4  bg-black  text-white px-sides py-3`}>
       <Link to="/" aria-label="logo" className="">
         <img src={logo} alt="Logo" className="aspect-square w-[30px] sm:w-img" />
       </Link>
 
-      <nav className="relative  w-s-img aspect-square ">
+      <nav className="relative  w-s-img aspect-square  flex items-center justify-center">
         <button
           className={` *:transition-transform *:duration-300 absolute right-0 z-[800] *:ease-in *:h-[2px] w-s-img *:rounded-full flex items-end flex-col gap-[6px] ham-btn ${
             isOpen ? "active *:bg-black" : "*:bg-white"

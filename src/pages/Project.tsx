@@ -79,12 +79,14 @@ const [filteredProjects, setFilteredProjects] = useState<ProjectType[]>([]);
           </li>
         </motion.ul>
       </section>
-      <section className="flex flex-wrap pb-8  px-sides justify-center gap-x-[5%] gap-y-6">
+      <motion.section initial="hidden"
+        whileInView="visible"
+         className="flex flex-wrap pb-8  px-sides justify-center gap-x-[5%] gap-y-6">
         {filteredProjects.length > 0 &&
           filteredProjects.map((project) => {
             return <ProjectCard key={project.name} project={project} />;
           })}
-      </section>
+      </motion.section>
       <section className="flex items-center justify-center pt-6 gap-4 md:gap-8 px-sides w-full  flex-wrap ">
         <button
           className="Btn text-sm font-normal"
