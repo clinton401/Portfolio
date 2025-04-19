@@ -3,7 +3,7 @@ import ParentComp from '../components/ParentComp'
 import GradientText from '../components/GradientText';
 import { MyContext } from '../ContextComp';
 import { motion } from "framer-motion"
-import { scaleAnimation2 } from "../lib/framer-motion-utils";
+// import { scaleAnimation2 } from "../lib/framer-motion-utils";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";

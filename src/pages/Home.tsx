@@ -3,7 +3,7 @@ import { MyContext } from "../ContextComp";
 // import LandingPage from "../components/LandingPage";
 import GradientText from "../components/GradientText";
 import ProjectCard from "../components/ProjectCard";
-import { scaleAnimation2 } from "../lib/framer-motion-utils";
+// import { scaleAnimation2 } from "../lib/framer-motion-utils";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";

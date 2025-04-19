@@ -17,6 +17,7 @@ export type ExperienceType = {
 
 type MyContextType = {
   skills: string[];
+  techStack: string[];
   projects: ProjectType[];
   scrollDirection: string;
   navigation: (route: string) => void;
