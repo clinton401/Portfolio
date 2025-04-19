@@ -68,7 +68,7 @@ const GradientText: FC<MyProps> = ({
           {experiences.map((experience) => {
             return (
               <div
-                className="overflow-hidden w-[250px] relative "
+                className="overflow-hidden w-full relative "
                 key={experience.name}
               >
                 <motion.ul className=" flex md:items-start items-center flex-col gap-2">

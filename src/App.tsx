@@ -20,6 +20,7 @@ import cannanImg from "./assets/cannann.png";
 import foodplugImg from "./assets/foodplug.png";
 import gestureImg from "./assets/gesture.png";
 import linktideImg from "./assets/linktide.png";
+import brizaImg from "./assets/briza.png"
 import ContextComp from './ContextComp';
 import { useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -39,6 +40,23 @@ function App() {
     gitImg,
   ];
   const projects = [
+    {
+      name: "Briza",
+      imgUrl: brizaImg,
+      description:
+        "Briza is a modern social media platform where users can create posts, engage in real-time discussions, join interest-based channels, and connect with others in a dynamic, community-driven space.",
+      technologies: [
+        "NextJS",
+        "TypeScript",
+        "Next-Auth",
+        "PostgresSQL",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      filters: "React",
+      liveUrl: "https://briza-nine.vercel.app",
+      githubUrl: "https://github.com/clinton401/briza",
+    },
     {
       name: "Linktide",
       imgUrl: linktideImg,
@@ -150,15 +168,24 @@ function App() {
       githubUrl: "https://github.com/clinton401/rock-paper-scissors",
     },
   ];
-  const experiences = [{
-    name: "Xerax labs.inc",
-    description: "Junior frontend web developer",
+const experiences = [
+  {
+    name: "Nobox Labs",
+    description: "Full Stack Software Developer — Building and scaling production-grade web and mobile applications using modern technologies across the stack, including React, Node.js, PostgreSQL, and React Native.",
+    time: "2024 – Present"
+  },
+  {
+    name: "Xerax Labs Inc.",
+    description: "Junior Frontend Developer — Contributed to building responsive user interfaces and improving overall UI/UX using HTML, CSS, and JavaScript.",
     time: "2022"
-  }, {
-    name: "Getlinked Hackaton",
-    description: "Frontend web developer",
+  },
+  {
+    name: "Getlinked Hackathon",
+    description: "Frontend Developer — Collaborated in a fast-paced team environment to design and develop a functional MVP within tight deadlines.",
     time: "2023"
-  }]
+  }
+];
+
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -183,12 +210,28 @@ function App() {
    
     navigate(route);
   }
+const techStack = [
+  "React.js",
+  "Node.js",
+  "TypeScript",
+  "JavaScript",
+  "PostgreSQL",
+  "NextAuth",
+  "Passport.js",
+  "JWT",
+  "Express.js",
+  "Tailwind CSS",
+  "React Native",
+  "Git & GitHub"
+];
+
 
   const values = {
     skills,
     projects,
     scrollDirection,
     navigation,
+    techStack,
     experiences
   };
   return (

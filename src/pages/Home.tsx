@@ -17,18 +17,16 @@ function Home() {
     >
       <GradientText
         heading="About Me"
-        text="I am a Frontend Web Developer with a passion for creating intuitive
-          and dynamic user interfaces using HTML, CSS, JavaScript and
-          TypeScript, especially with React. Currently, I’m expanding my skill
-          set into backend development, learning server-side technologies and
-          database management to become a Full Stack Developer. Excited to
-          bridge the gap between frontend and backend to build comprehensive web
-          solutions."
+        text="I’m a Full Stack Developer with a passion for building seamless, user-friendly digital experiences. I specialize in crafting dynamic interfaces using HTML, CSS, JavaScript, and TypeScript with React, while also handling backend development with server-side technologies, databases, and authentication systems like Passport.js and JWT.
+
+In addition to web development, I’m also exploring app development to extend the reach of my projects across platforms. Over time, I’ve scaled my projects by adding features like real-time interactions, role-based access control, and efficient data management — continually refining both the user experience and system performance.
+
+Driven by curiosity and creativity, I love turning ideas into polished, full-featured applications that make an impact."
       />
 
       <GradientText heading="My Skills">
         <motion.div
-          className="md:w-1/2 items-center flex flex-wrap md:justify-between justify-center w-full  gap-4"
+          className="md:w-1/2 items-center flex flex-wrap md:justify-start justify-center w-full  gap-4"
           initial="hidden"
           variants={{
             visible: {
@@ -40,27 +38,10 @@ function Home() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {contents &&
-            contents?.skills.map((skill: string) => {
-              return (
-                <motion.img
-                  key={skill}
-                  variants={scaleAnimation2}
-                  src={skill}
-                  whileHover={{
-                    rotate: "45deg",
-                    transition: {
-                      duration: 1,
-                      type: "spring",
-                      damping: 10,
-                      stiffness: 100,
-                    },
-                  }}
-                  alt="skills img"
-                  className="w-[50px] object-cover"
-                />
-              );
-            })}
+          {contents && contents?.techStack.map(stack => {
+            return <span className="rounded-full px-2 py-1 bg-gradient">{stack}</span>
+          })}
+       
         </motion.div>
       </GradientText>
       <GradientText heading="My Projects">
