@@ -12,7 +12,7 @@ function Home() {
   const contents = useContext(MyContext);
   return (
     <ParentComp
-      landingText="FRONTEND WEB DEVELOPER"
+      landingText="FULLSTACK SOFTWARE DEVELOPER"
       landingHeading="OWOSENI-CLINTON"
     >
       <GradientText
