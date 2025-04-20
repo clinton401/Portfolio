@@ -39,7 +39,7 @@ Driven by curiosity and creativity, I love turning ideas into polished, full-fea
           viewport={{ once: true }}
         >
           {contents && contents?.techStack.map(stack => {
-            return <span className="rounded-full px-2 py-1 bg-gradient">{stack}</span>
+            return <span className="rounded-full px-2 text-sm py-1 bg-gradient">{stack}</span>
           })}
        
         </motion.div>
