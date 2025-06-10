@@ -21,6 +21,7 @@ import foodplugImg from "./assets/foodplug.png";
 import gestureImg from "./assets/gesture.png";
 import linktideImg from "./assets/linktide.png";
 import brizaImg from "./assets/briza.png"
+import studyAIImg from "./assets/studyai.png"
 import ContextComp from './ContextComp';
 import { useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -40,6 +41,24 @@ function App() {
     gitImg,
   ];
   const projects = [
+    {
+      name: "StudyAi",
+      imgUrl: studyAIImg,
+      description:
+        "StudyAi is a student-focused AI web app that helps users summarize PDF documents, get writing assistance, and generate study material. It is completely free to use, with or without login.",
+      technologies: [
+        "NextJS",
+        "Next-Auth",
+        "TailwindCSS",
+        "MongoDB",
+        "Typescript",
+        "Google Gemini API",
+      ],
+      filters: "React",
+      liveUrl: "https://studyaii.vercel.app",
+      githubUrl: "https://github.com/clinton401/study-ai",
+    },
+    
     {
       name: "Briza",
       imgUrl: brizaImg,
@@ -107,7 +126,7 @@ function App() {
         "A movie search platform where you can find and watch trailers, explore detailed information about films, and stay updated with the latest trending movies and TV shows.",
       technologies: ["React", "JavaScript", "TailwindCSS", "MongoDB", "ExpressJS",  "SwiperJS"],
       filters: "React",
-      liveUrl: "https://cinematico.up.railway.app",
+      liveUrl: "https://cinematico.onrender.com",
       githubUrl: "https://github.com/clinton401/cinematico-fullstack",
     },
     {
